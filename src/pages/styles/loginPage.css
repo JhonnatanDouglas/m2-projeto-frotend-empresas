@@ -1,0 +1,88 @@
+/* LOGIN PAGE */
+
+.header-homePage__container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.main__container {
+    position: relative;
+    height: 100%;
+}
+
+.form__container {
+    margin: 8.75rem auto auto;
+    padding: 2.5rem;
+    width: 31.5625rem;
+    height: 31.25rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.form__container > h2 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-1);
+    color: var(--color-grey-1);
+}
+
+.form__container > h3 {
+    margin: 0.625rem 0rem 1.5625rem;
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: var(--color-grey-1);
+}
+
+.buttons__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-6);
+}
+
+.buttons__form > input {
+    padding: 0.9375rem;
+    width: 100%;
+    height: 3.125rem;
+    background: var(--white-mode);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+}
+
+.buttons__form > input::placeholder {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: var(--color-grey-3);
+}
+
+.buttons__form > button {
+    margin-top: 0.3125rem;
+    width: 100%;
+}
+
+.button__opacity {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttons__form > p {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    margin-top: 0.3125rem;
+}
+
+.background__img {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/img/login_register-Page.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

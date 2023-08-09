@@ -1,0 +1,88 @@
+/* HOME PAGE */
+
+.header-homePage__container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.8125rem auto auto;
+    height: 100%;
+    width: 100%;
+    max-width: 72.5rem;
+}
+
+.section__left > figure > img {
+    width: 34.375rem;
+    height: 51.5625rem;
+}
+
+.section__right > select {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-6);
+    color: var(--white-mode);
+    padding: 0rem 1rem;
+    width: 34.375rem;
+    height: 3.125rem;
+    appearance: none;
+    background-image: url('../../assets/icons/arrow-select.svg');
+    background-repeat: no-repeat;
+    background-position: center right 1rem;
+    background-color: var(--color-brand1);
+    cursor: pointer;
+}
+
+.section__right > select:focus {
+    outline: none;
+}
+
+.section__right > select > option {
+    background-color: var(--color-brand2);
+}
+
+.section__right > div {
+    margin-top: 1.5625rem;
+    padding: 1.5625rem 1.875rem 0.625rem;
+    width: 34.375rem;
+    box-shadow: 0rem 0rem 2.1875rem rgba(0, 0, 0, 0.22);
+}
+
+.section__right > div > h2 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-4);
+    color: var(--color-grey-1);
+}
+
+.company__list {
+    display: flex;
+    flex-direction: column;
+    height: 40.6875rem;
+    margin-top: 1.5625rem;
+    overflow: auto;
+    gap: var(--gap-3);
+}
+
+.company__list > li {
+    display: flex;
+    margin-right: 0.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5625rem;
+    height: 7.1875rem;
+    border: 0.0625rem solid blue;
+    border-radius: var(--border-radius-3);
+    gap: var(--gap-5);
+}
+
+.company__list > li > h3 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-8);
+    color: var(--color-grey-1);
+}

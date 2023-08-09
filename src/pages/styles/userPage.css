@@ -1,0 +1,113 @@
+/* User Page */
+
+.header-userPage__container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.header-userPage__container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 72.5rem;
+}
+
+.header-userPage__container > div > figure {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-6);
+}
+
+.main__container {
+    position: relative;
+    margin: 2.8125rem auto auto; 
+    height: 100%;
+    width: 100%;
+    max-width: 72.5rem;
+}
+
+.main__container > div {
+    height: 8.75rem;
+    padding: 1rem 1.875rem 3.125rem;
+    background: var(--white-mode);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+}
+
+.main__container > div > h2 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+    color: var(--color-grey-1);
+}
+
+.main__container > div > p {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-8);
+    line-height: var(--line-height-7);
+    color: var(--color-grey-1);
+}
+
+.depart__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    height: 5rem;
+    background: var(--color-brand1);
+}
+
+.depart__name > h2 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    text-align: center;
+    color: var(--white-mode);
+}
+
+.employees__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 32.5rem;
+    padding: 2.5rem 2.8125rem;
+    background: #F8F8F8;
+    overflow-x: auto;
+    gap: var(--gap-duo-2);
+}
+
+.employees__list > li {
+    height: 5.9375rem;
+    width: 20rem;
+    background: var(--white-mode);
+    border: 0.0625rem solid var(--color-brand1);
+}
+
+.employees__list > li > h3 {
+    padding: 0.9375rem 1.25rem;
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-8);
+    color: var(--color-grey-1);
+}
+
+.employees__empty {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.875rem;
+    height: 29.375rem;
+    background: #F8F8F8;
+    border: 0.0625rem solid var(--color-grey-3);
+}
+
+.employees__empty > h3 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-4);
+    color: var(--color-grey-1);
+}

@@ -1,0 +1,237 @@
+/* Admin Page */
+
+.header-userAdmin__container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.header-userAdmin__container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 72.5rem;
+}
+
+.header-userAdmin__container > div > figure {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-6);
+}
+
+.main__container {
+    position: relative;
+    margin: 2.8125rem auto auto; 
+    height: 100%;
+    width: 100%;
+    max-width: 72.5rem;
+}
+
+.main__container > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#select-admin__company {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-6);
+    color: var(--white-mode);
+    padding: 0rem 1rem;
+    width: 18.125rem;
+    height: 3.125rem;
+    appearance: none;
+    background-image: url('../../assets/icons/arrow-select.svg');
+    background-repeat: no-repeat;
+    background-position: center right 1rem;
+    background-color: var(--color-brand1);
+    cursor: pointer;
+}
+
+#select-admin__company:focus {
+    outline: none;
+}
+
+.create__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5625rem 0rem;
+}
+
+.create__area > h2 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+    color: #000000;
+}
+
+.create__area > button {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: var(--white-mode);
+    text-align: center;
+    padding: 0rem 1rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: var(--color-brand1);
+    cursor: pointer;
+}
+
+.departments__list {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 24.0625rem;
+    padding: 3.125rem 3.4375rem;
+    overflow-y: auto;
+    box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.22);
+    gap: var(--gap-duo-1);
+}
+
+.departments__list > li {
+    display: flex;
+    flex-direction: column;
+    height: 10.3125rem;
+    width: 30.625rem;
+    padding: 1.25rem 1.875rem 2.5rem;
+    background: var(--white-mode);
+    border: 0.0625rem solid var(--color-brand1);
+    gap: var(--gap-6);
+}
+
+.departments__list > li > figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.department__name {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-8);
+    color: #000000;
+}
+
+.view__icon {
+    background-size: 2.5rem;
+    cursor: pointer;
+}
+
+.department__description {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: #000000;
+}
+
+.edit__icon {
+    padding: 0rem 0.1875rem;
+    background-size: 2.5rem;
+    cursor: pointer;
+}
+
+.department__company {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: #000000;
+}
+
+.delete__icon {
+    padding: 0rem 0.3125rem;
+    background-size: 2.5rem;
+    cursor: pointer;
+}
+
+.departments__list--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24.0625rem;
+    background: #F8F8F8;
+    border: 0.125rem solid var(--color-grey-3);
+}
+
+.departments__list--empty > h2 {
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-6);
+    color: #000000;
+}
+
+.registered__users {
+    margin-bottom: 6.25rem;
+}
+
+.user-register__tittle {
+    margin-top: 3.125rem;
+}
+
+.user-register__tittle > h2{
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+    color: #000000;
+}
+
+.users__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    height: 24.0625rem;
+    padding: 3.125rem 3.4375rem;
+    overflow-y: auto;
+    box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.22);
+    gap: var(--gap-duo-1);
+}
+
+.users__list > li {
+    display: flex;
+    flex-direction: column;
+    height: 9.0625rem;
+    width: 30.625rem;
+    padding: 1.25rem 1.875rem 2.5rem;
+    background: var(--white-mode);
+    border: 0.0625rem solid var(--color-brand1);
+    gap: var(--gap-6);
+}
+
+.users__list > li > figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__name {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-8);
+    color: #000000;
+}
+
+.user__company-name {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-10);
+    line-height: var(--line-height-9);
+    color: #000000;
+}
+
+.user-edit__icon {
+    padding: 0rem 0.1875rem;
+    background-size: 2.5rem;
+    cursor: pointer;
+}
+
+.user-delete__icon {
+    padding: 0rem 0.3125rem;
+    background-size: 2.5rem;
+    cursor: pointer;
+}

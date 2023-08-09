@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/pages/styles/index.css">
+
+    <script type="module" src="./src/pages/scripts/index.js" defer></script>
+
+    <link rel="icon" href="./src/assets/icons/letter-k.svg" type="image/x-icon">
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+    <div class="toast__container">
+        <p></p>
+    </div>
+    <header class="header-homePage__container">
+        <div>
+            <figure>
+                <img class="ellipse__image" src="./src/assets/icons/blue-ellipse.svg"
+                    alt="elipse de cor azul da marca da empresa Kenzie Empresas">
+                <img class="kenzie__logo" src="./src/assets/img/kenzie-empresas.svg"
+                    alt="logo da marca da empresa Kenzie Empresas">
+            </figure>
+            <div class="button__area">
+                <button class="button__secondary button__login">Login</button>
+                <button class="button__primary button__register">Cadastro</button>
+            </div>
+        </div>
+    </header>
+    <main class="main__container">
+        <section class="section__left">
+            <figure>
+                <img class="kenzie__companies" src="./src/assets/img/home-page.svg" alt="">
+            </figure>
+        </section>
+        <section class="section__right">
+            <select id="select__company" name="select">
+            </select>
+            <div>
+                <h2>Lista de Empresas</h2>
+                <ul class="company__list">
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

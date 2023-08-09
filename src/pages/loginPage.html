@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="./styles/loginPage.css">
+
+    <script type="module" src="./scripts/loginPage.js" defer></script>
+
+    <link rel="icon" href="/src/assets/icons/letter-k.svg" type="image/x-icon">
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    
+    <div class="toast__container">
+        <p></p>
+    </div>
+
+    <header class="header-homePage__container">
+        <div>
+            <figure>
+                <img class="ellipse__image" src="../assets/icons/blue-ellipse.svg" alt="elipse de cor azul da marca da empresa Kenzie Empresas">
+                <img class="kenzie__logo" src="../assets/img/kenzie-empresas.svg" alt="logo da marca da empresa Kenzie Empresas">
+            </figure>
+            <div class="button__area">
+                <button class="button__secondary button__home">Home</button>
+                <button class="button__primary button__register">Cadastro</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__container">
+
+        <form class="form__container" action="">
+            <h2>Login</h2>
+            <h3>Preencha os campos para realizar login</h3>
+            <div class="buttons__form">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <input type="password" name="password" placeholder="Sua senha">
+                <button class="button__primary button__user-login">Login</button>
+                <p>ou</p>
+                <button class="button__secondary button__register button__opacity">Cadastre-se</button>
+            </div>
+        </form>
+        <figure>
+            <img class="background__img">
+        </figure>
+    </main>
+    
+</body>
+</html>

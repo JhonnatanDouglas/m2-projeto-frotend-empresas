@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../styles/adminPage.css">
+
+    <script type="module" src="../scripts/adminPage.js" defer></script>
+
+    <link rel="icon" href="/src/assets/icons/letter-k.svg" type="image/x-icon">
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+
+    <header class="header-userAdmin__container">
+        <div>
+            <figure>
+                <img class="ellipse__image" src="../../assets/icons/purple-ellipse.svg"
+                    alt="elipse de cor roxa da marca da empresa Kenzie Empresas">
+                <img class="kenzie__logo" src="../../assets/img/kenzie-empresas.svg"
+                    alt="logo da marca da empresa Kenzie Empresas">
+            </figure>
+            <div class="button__area">
+                <button class="button__secondary button__logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__container">
+        <div>
+            <select id="select-admin__company" name="select">
+                <option value="exemplo-01" selected hidden>Selecionar Empresa</option>
+                <option value="exemplo-01">exemplo 01</option>
+                <option value="exemplo-02">exemplo 02</option>
+                <option value="exemplo-03">exemplo 03</option>
+                <option value="exemplo-04">exemplo 04</option>
+                <option value="exemplo-05">exemplo 05</option>
+            </select>
+        </div>
+
+        <section class="departments__container">
+            <div class="create__area">
+                <h2>Departamentos</h2>
+                <button class="create__depart">+ Criar</button>
+            </div>
+
+            <ul class="departments__list">
+            </ul>
+
+            <div class="departments__list--empty">
+                <h2>Selecione uma EMPRESA para visualizar o departamento</h2>
+            </div>
+        </section>
+
+        <section class="registered__users">
+            <div class="user-register__tittle">
+                <h2>Usuários cadastrados</h2>
+            </div>
+            <ul class="users__list">
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="user-edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="user-delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <figcaption class="user__name">Username</figcaption>
+                        <img class="edit__icon" src="../../assets/icons/edit.svg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption class="user__company-name">NomeCompanhia</figcaption>
+                        <img class="delete__icon" src="../../assets/icons/delete.svg" alt="">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <dialog class="departCreate__modal-controller--open">
+        <div class="departCreate__container">
+            <button class="button__modal--close">X</button>
+            <h2>Criar Departamento</h2>
+
+            <form id="formDepartCreate">
+                <input type="text" name="name" placeholder="Nome do departamento">
+                <input type="text" name="description" placeholder="Descrição">
+                <select name="selectEmpty" id="selectDepartCreate">
+                    <option value="exemplo-01" selected hidden>Selecionar empresa</option>
+                    <option value="teste1">teste</option>
+                    <option value="teste2">teste</option>
+                    <option value="teste3">teste</option>
+                    <option value="teste4">teste</option>
+                </select>
+                <div id="departCreate__message">
+                    <p>Criado com sucesso</p>
+                </div>
+                <button class="button__green button__create-depart" type="submit">Criar</button>
+            </form>
+
+        </div>
+    </dialog>
+
+    <dialog class="departView__modal-controller--open">
+        <div class="departView__container">
+            <button class="button__modal--close">X</button>
+            <div class="departView__tittle">
+                <h1>Nome do departamento</h1>
+                <h2>Descrição do departamento</h2>
+                <h3>Empresa pertencente</h3>
+            </div>
+
+            <div class="departView__select">
+                <select name="" id="">
+                    <option value="exemplo-01" selected hidden>Selecionar usuário</option>
+                    <option value="">teste</option>
+                    <option value="">teste</option>
+                    <option value="">teste</option>
+                    <option value="">teste</option>
+                </select>
+                <button class="button__green" type="submit">Contratar</button>
+            </div>
+
+            <ul class="departView__users">
+                <li>
+                    <div>
+                        <h2>Username</h2>
+                        <p>Company Name</p>
+                    </div>
+                    <button class="button__whiteRed">Desligar</button>
+                </li>
+                <li>
+                    <div>
+                        <h2>Username</h2>
+                        <p>Company Name</p>
+                    </div>
+                    <button class="button__whiteRed">Desligar</button>
+                </li>
+                <li>
+                    <div>
+                        <h2>Username</h2>
+                        <p>Company Name</p>
+                    </div>
+                    <button class="button__whiteRed">Desligar</button>
+                </li>
+                <li>
+                    <div>
+                        <h2>Username</h2>
+                        <p>Company Name</p>
+                    </div>
+                    <button class="button__whiteRed">Desligar</button>
+                </li>
+                <li>
+                    <div>
+                        <h2>Username</h2>
+                        <p>Company Name</p>
+                    </div>
+                    <button class="button__whiteRed">Desligar</button>
+                </li>
+            </ul>
+
+        </div>
+    </dialog>
+
+    <dialog class="departEdit__modal-controller--open">
+        <div class="departEdit__container">
+            <button class="button__modal--close">X</button>
+            <h2>Editar Departamento</h2>
+            <div>
+                <textarea name="description" id="description__area" cols="30" rows="5" placeholder="Valores anteriores da descrição"></textarea>
+                <div id="departEdit__message">
+                    <p>Descrição atualizada com sucesso</p>
+                </div>
+                <button class="button__green button__edit-depart">Salvar</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="departDelete__modal-controller--open">
+        <div class="departDelete__container">
+            <button class="button__modal--close">X</button>
+            <div>
+                <h2>Realmente deseja remover o Departamento NOME e demitir seus funcionários?</h2>
+                <button class="button__red">Remover</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="userEdit__modal-controller--open">
+        <div class="userEdit__container">
+            <button class="button__modal--close">X</button>
+            <h2>Editar Usuário</h2>
+            <form>
+                <input type="text" name="" id="" placeholder="Nome">
+                <input type="email" name="" id="" placeholder="E-mail">
+                <button class="button__green">Salvar</button>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog class="userDelete__modal-controller--open">
+        <div class="userDelete__container">
+            <button class="button__modal--close">X</button>
+            <div>
+                <h2>Realmente deseja remover o usuário NOME?</h2>
+                <button class="button__red">Remover</button>
+            </div>
+        </div>
+    </dialog>
+
+    <div class="toast__container">
+        <p></p>
+    </div>
+
+</body>
+
+</html>
